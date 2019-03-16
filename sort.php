@@ -21,5 +21,6 @@ function sortAr(array $list) : array {
     return $sort ? $list : sortAr($list);
 }
 
+// test
 $ar = [10, 6, 3, 1, 7, 2, 9];
 print_r(sortAr($ar));

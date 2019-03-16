@@ -41,6 +41,7 @@ function tail_recursion_sum(array $list, int $value = 0): int
     } 
 }
 
+// test
 $ar = [10, 6, 3, 1, -7, 2, 9];
 print_r(
     [

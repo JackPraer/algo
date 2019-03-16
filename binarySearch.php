@@ -54,6 +54,7 @@ function recursion_binary_search(array $list, int $value, ?int $low = null, ?int
     return $current == $value ? $mid : recursion_binary_search($list, $value, $low, $high);
 }
 
+// test
 $a = [2,3,4,5,6,7,8,9,10];
 print_r(
     [

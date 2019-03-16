@@ -34,5 +34,6 @@ function sortArray(array $list): array
     return $sortedArray;
 }
 
+// test
 $ar = [10, 6, 3, 1, 7, 2, 9];
 print_r(sortArray($ar));
