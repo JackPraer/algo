@@ -29,7 +29,7 @@ let graph : TGraph = {
  * @param TGraph graph
  * @param string element
  */
-const breadthFirstSearch = (graph: TGraph, element: string) => {
+const breadthFirstSearch= (graph: TGraph, searchElement: string) : string => {
     if (Object.keys(graph).length == 0) {
         console.log('search element not found')
         return null
@@ -37,7 +37,7 @@ const breadthFirstSearch = (graph: TGraph, element: string) => {
 
     let list = {};
     for (let nodeName in graph) {
-        if (nodeName === element) {
+        if (nodeName === searchElement) {
             console.log('search element found at ', graph)
             return nodeName;
         }
@@ -45,8 +45,9 @@ const breadthFirstSearch = (graph: TGraph, element: string) => {
         Object.assign(list, graph[nodeName])
     }
 
-    return breadthFirstSearch(list, element)
+    return breadthFirstSearch(list, searchElement)
 }
+
 
 /**
  * Рекурсивный
@@ -87,5 +88,4 @@ console.log(
     depthFirstSearch(graph, 'man'),
 )
 
-// В функциях нет проверки на связанные узлы
 
